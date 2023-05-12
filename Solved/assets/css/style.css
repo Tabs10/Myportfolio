@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: center;
+}
+
+header {
+  padding: 40px;
+  text-align: center;
+  background: #0a25c0;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  background-color: #0f3547;
+}
+
+nav a {
+  color: #6df0d3;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #055c1b;
+  color: #fff;
+}
+
+nav a:active {
+  font-size: 110%;
+  box-shadow: 0 0 10px #000 inset;
+}
+
+nav a:focus {
+  outline: none;
+  border-color: #8ac4ff;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h3 {
+  margin: 2% 0;
+  color: #772014;
+  font-size: 150%;
+}
+
+h3::before {
+  font-family: Impact;
+  content: '\273A';
+  color: #772014;
+  margin-right: 5px;
+}
+
+h3::after {
+  font-family: Impact;
+  content: '\273A';
+  color: #772014;
+  margin-right: 5px;
+}
+
+h4 {
+  margin: 2% 0;
+  color: #991605;
+  font-size: 150%;
+}
+
+p {
+  margin: 2% 0;
+  color: #f71f02;
+  font-style: italic;
+  font-size: 150%;
+}
+aside {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.MyDetails {
+  flex: 3;
+  background-color: #6df0d3;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Details {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 400px;
+}
+
+.Details header {
+  padding: 20px;
+}
+
+.Details p {
+  text-align: center;
+}
+
+.Details img {
+  width: 100%;
+}
+
+.Details img:hover{
+  color: #424242; 
+  transition: .3s ease-in;
+  transform: scale(1.10);
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}
